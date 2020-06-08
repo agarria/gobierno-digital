@@ -244,7 +244,7 @@ body {
     -webkit-transform: translate(50%,0);
     transform: translate(50%,0);
 }
-.preloader-logo svg {
+.preloader-logo img {
     width: 80%;
     height: auto;
     opacity: 0;
@@ -678,26 +678,74 @@ header:active {
     cursor: grabbing;
 }
 
-header,
-.slick-slide,
-.slick-slide img {
-    height: auto;
-}
-
-header img {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-}
-
 .slider {
     display: block;
 }
 
 .slider-mobile {
     display: none !important;
+}
+
+.slide-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    padding: 0 8%;
+    margin: 0;
+    width: 100%;
+    height: 360px;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.slide-img-container,
+.slide-info-container {
+    display: flex;
+    float: left;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-img-container {
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.slide-img-container img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.slide-info-container {
+    justify-content: flex-start;
+    width: 60%;
+}
+
+.slide-info-container p {
+    font-family: 'Metropolis ExtraBold', sans-serif;
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 46px;
+}
+
+.slide-1 {
+    background: url('../img/slide-background.png');
+}
+
+.slide-2 {
+    background: #e94b35;
 }
 
 section {
@@ -810,14 +858,14 @@ section {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     float: left;
     width: 100%;
     height: 420px;
     padding: 0 8%;
     margin: 0;
     overflow: hidden;
-    background: url(../img/banner.png), #02324F;
+    background: url(../img/slide-background.png);
     background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;
@@ -825,10 +873,51 @@ section {
     background-size: cover;
 }
 
-.section-banner img {
+.section-banner-mid {
+    height: 300px;
+}
+
+.banner-info-container {
+    display: block;
+    float: left;
+    width: 60%;
+}
+
+.banner-info-container img {
+    display: block;
+    float: left;
+    width: 35%;
+    height: auto;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.banner-info-container p {
+    font-family: 'Metropolis ExtraBold', sans-serif;
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 5% 0 0 0;
+    color: #fff;
+    font-size: 34px;
+}
+
+.banner-img-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.banner-img-container img {
     display: block;
     width: auto;
-    height: 180px;
+    height: 90%;
+    vertical-align: middle;
 }
 
 .banner-button {
@@ -868,7 +957,7 @@ section {
     float: left;
     width: 100%;
     padding: 0 1%;
-    margin: 0 0 4% 0;
+    margin: 0 0 8% 0;
     color: #02324F;
     font-size: 40px;
     text-align: left;
@@ -1360,6 +1449,81 @@ td {
 .svg-bg-3 svg {
     fill: #02324f;
     stroke: #02324f;
+}
+
+.section-update {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 8% 0 0 0;
+}
+
+.update-actions {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.update-time {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    float: left;
+    width: auto;
+    height: auto;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #02324f;
+    text-transform: uppercase;
+}
+
+.update-time i {
+    font-size: 30px;
+    margin: 0 10px 0 0;
+}
+
+.time-clock {
+    font-weight: 400;
+}
+
+.update-download {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    float: right;
+    width: 50%;
+    height: auto;
+}
+
+.download-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 0 0 0 5%;
+    color: #fff;
+    background: #02324f;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.download-option i {
+    font-size: 30px;
+    margin: 0 10px 0 0;
 }
 
 
