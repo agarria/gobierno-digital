@@ -3,9 +3,39 @@ and (min-device-width: 320px)
 and (max-device-width: 768px) 
 and (-webkit-min-device-pixel-ratio: 2) {
 
+    /* PRELOADER */
+
+    .preloader-logo {
+        position: absolute;
+        top: 25%;
+        left: -100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 50%;
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+
+    .preloader-logo img {
+        width: 50%;
+        height: auto;
+    }
+
+    /* BODY / HTML */
+    
+    html,
+    body {
+        overflow: hidden;
+    }
+
     /* NAV */
     
     nav {
+        position: absolute;
+        top: 0;
+        left: 0;
         overflow: visible;
     }
     
@@ -207,7 +237,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
     /* MAIN */
     
     main {
-
+        position: absolute;
+        top: 80px;
+        left: 0;
+        height: calc(100% - 80px);
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     /* TABLE */
@@ -332,11 +367,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .action-name {
         margin: 5% 0;
         font-size: 22px;
-    }
-    
-    .action-text {
-        text-align: justify;
-        text-justify: inter-word;
     }
     
     .section-video {
