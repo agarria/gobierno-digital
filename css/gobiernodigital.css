@@ -1365,6 +1365,9 @@ section {
     text-transform: uppercase;
 }
 
+.table-mobile {
+    display: none;
+}
 
 table {
     border-collapse: collapse;
