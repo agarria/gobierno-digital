@@ -366,7 +366,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
     
     .action-name {
         margin: 5% 0;
-        font-size: 22px;
+        font-size: 20px;
+    }
+
+    .action-text {
+        font-size: 14px;
     }
     
     .section-video {
